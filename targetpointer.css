@@ -1,0 +1,127 @@
+.gameApp {
+    margin: 15px;
+    width: 1000px;
+    background-color: greenyellow;
+}
+#gameTitle{
+    text-align: center;
+    font-size: 2rem;
+    font-stretch: expanded;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+  
+.boardArea {
+    background-color: blue;
+    width:800px;
+    height: 500px;
+    background:#eaeaeae0;
+    position:relative;
+    text-align: center;
+}
+  
+#circle{
+    width:40px;
+    height:40px;
+    /* background:red; */
+    /* border-radius:5rem; */
+    /*content:url(media/gray-rat-on-pink-vector-clipart_k29901716.jpg); */
+    content:url(media/Rat1.png);
+    position:absolute;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+}
+
+#pointer{
+    width:60px;
+    height:60px;
+    top:100;
+    left:100;
+    content:url(media/Cat.png); 
+    position: absolute;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+}
+.sidebar {
+    background-color: greenyellow;
+    width:200px;
+    height: 500px;
+    text-align:left;
+    font-size: 2rem;
+  }
+
+button{
+    background-color:blueviolet;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    margin:5px;
+}
+
+#prev_level:disabled{
+    background-color: darkgrey;
+}
+
+#next_level:disabled{
+    background-color: darkgrey;
+}
+
+#help{
+    position: relative;
+    display:inline-block;
+    border-bottom: 1px dotted black;
+    margin:5px;
+}
+
+#help #helpText{
+    visibility: hidden;
+    width:180px;
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin-left: -90px;
+    bottom: 100%;
+    position: absolute;
+    z-index: 1;
+}
+#help:hover #helpText{
+    visibility: visible;
+}
+#resultframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 70px 140px 175px 140px;
+    padding : 10px;
+    width: 700px;
+    height: 400px;
+    background-color: orange;
+    visibility: hidden;
+    border: 1px solid black;
+}
+
+#result_data{
+    text-align: center;
+    font-size: 2rem;
+}
+

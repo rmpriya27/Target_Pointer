@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" type-"text/css" href="targetpointer.css">
+        <title>Target Pointer</title>
+    </head>
+    <body>
+        <div class='gameApp'>
+            <div class='row'>
+              <div class='column'>
+                <div id='gameTitle'>
+                  Catch me!!!!!
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+                <div class='boardArea'>
+                    <div id='circle'>
+                     
+                    </div>
+                    <div id="pointer">
+                        
+                    </div>
+                    <div class="result" id="resultframe">
+                        <p class ="result" id="result_data"></p>
+                        <p class ="result" id="result_score"></p>
+                        <button class="result" id="prev_level">Play Previous Level</button>
+                        <button class="result" id="restart">Play Again</button>
+                        <button class="result" id="next_level">Play Next Level</button>
+                    </div>
+                  
+                </div>
+                <div class="sidebar">
+                    <p>Time</p>
+                    <p id="timer">0</p>
+                    <p>Hits</p>
+                    <p id="points">0</p>
+                    <div>
+                        <p>Music</p>
+                        <button onclick="playBackgroundMusic()">Play/Pause</button>
+                    </div>
+                    <div id="help">Help ?<span id="helpText">Move your cursor near to mouse to help Tom catch Jerry.</span></div>
+                </div>
+            </div>
+          </div>
+          <audio id="backgroundMusic">
+            <source src="media/Background-piano.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="cAudio">
+            <source src="media/click.mp3" type="audio/mpeg">
+        </audio>
+        <script type="text/javascript" src="targetpointer.js"></script>
+    </body>
+</html>
